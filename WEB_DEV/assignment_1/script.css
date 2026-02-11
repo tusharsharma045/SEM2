@@ -1,0 +1,160 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Background */
+body {
+    background: linear-gradient(135deg, #7f9cf5, #38b2ac);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+/* Main Container */
+.container {
+    width: 100%;
+    max-width: 1100px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+    font-size: 28px;
+}
+
+/* Dashboard Layout */
+.dashboard {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 20px;
+}
+
+/* Card Style */
+.form-section,
+.events-section,
+.demo-section {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Section Titles */
+h2 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Form */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 8px 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #7f9cf5;
+}
+
+/* Buttons */
+button {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+button[type="submit"] {
+    background: linear-gradient(90deg, #6b46c1, #805ad5);
+    color: white;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* Events Section */
+.controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+#clearAllBtn {
+    background: #e53e3e;
+    color: white;
+}
+
+#addSampleBtn {
+    background: #6b46c1;
+    color: white;
+}
+
+/* Event Card */
+.event-card {
+    background: #f7fafc;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.event-card h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.event-card p {
+    font-size: 13px;
+    color: #555;
+}
+
+.empty-state {
+    text-align: center;
+    color: #777;
+    font-size: 14px;
+}
+
+/* Demo Section */
+.demo-section {
+    margin-top: 20px;
+}
+
+.demo-box {
+    background: #edf2f7;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.demo-content {
+    font-size: 14px;
+    color: #444;
+}
