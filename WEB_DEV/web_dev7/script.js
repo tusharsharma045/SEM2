@@ -10,3 +10,5 @@ function handleThirdClick() {
     const contentDiv = document.getElementById("content");
     contentDiv.innerHTML = "<h2>New Heading</h2><img src='image.jpg' alt='Image'>";
 }
+
+
