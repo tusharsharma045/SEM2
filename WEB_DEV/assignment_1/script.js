@@ -88,3 +88,21 @@ document.addEventListener("DOMContentLoaded", () => {
   showEmptyState();
 
 });
+
+
+eventContainer.addEventListener("click", (event) => {
+
+const card = event.target.clossest("event-card");
+
+if (event.target.classList.contains("delete-btn")) {
+  card.remove();
+  if (eventContainer.children.length === 0) {
+    eventContainer.innerHTML = "<div class='empty-state'>No events added yet!</div>";
+  }
+}
+});
+
+
+clearAllBtn.addEventListener("click", () => {
+  eventContainer.innerHTML = "<div class='empty-state'>No events added yet!</div>";
+});
