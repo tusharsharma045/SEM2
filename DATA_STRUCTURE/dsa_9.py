@@ -22,9 +22,7 @@
 
 
 
-
-
-# Shorter version using list comprehension
+# reshaped the matrix and print the elements in the new shap
 n = int(input("Rows: "))
 m = int(input("Cols: "))
 AIML = [[int(input(f"[{i}][{j}]: ")) 
