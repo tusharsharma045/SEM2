@@ -37,9 +37,9 @@ print("Matrix:")
 # Reshape the matrix
 new_r = int(input("New rows: "))
 new_c = int(input("New cols: "))
-flat = [elem for row in AIML for elem in row]  
-if len(flat) == new_r * new_c:
-    reshaped = [[flat[i*new_c + j] 
+matrix = [element for row in AIML for element in row]  
+if len(matrix) == new_r * new_c:
+    reshaped = [[matrix[i*new_c + j] 
 for j in range(new_c)] 
     for i in range(new_r)]
     print("Reshaped Matrix:")
