@@ -44,3 +44,5 @@ for j in range(new_c)]
     [print(*row) for row in reshaped]
 else:
     print(f"Cannot reshape {n}x{m} to {new_r}x{new_c}")
+
+    
