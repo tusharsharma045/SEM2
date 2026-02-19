@@ -11,12 +11,20 @@ class Node:
 class LinkedList:
     def __init__(self,head = None):
         self.head = head
+        
 
     def insert_at_beginning(self, data):
         node = Node(data, self.head)
         self.head = node
 
-
+    def insert_at_position(self, data, val):
+        node = Node(data)
+        temp = self.head
+        while (temp and temp.data != val):
+            temp = temp.next
+        node.next = temp.next
+        temp.next = node
+        
     def insert_at_end(self, data):
         node = Node(data)
         if self.head is None:
@@ -43,4 +51,5 @@ L1.insert_at_beginning(20)
 L1.insert_at_beginning(100)
 L1.insert_at_end(24)
 L1.insert_at_end(14)
+L1.insert_at_position(50, 20)
 L1.display()
