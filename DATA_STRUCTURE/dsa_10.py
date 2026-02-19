@@ -15,8 +15,21 @@ class LinkedList:
         node = Node(data, self.head)
         self.head = node
 
-    def displlay(self):
+
+    def insert_at_end(self,data):
+        node = Node(data,self.head)
+
+
+
+    def display(self):
         temp = self.head
         while temp:
             print(temp.data, end = " ")
             temp = temp.next
+        print(None)
+
+L1 = LinkedList()
+L1.insert_at_beginning(10)
+L1.insert_at_beginning(20)
+L1.insert_at_beginning(100)
+L1.display
