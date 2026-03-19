@@ -43,11 +43,15 @@ mp = {}
 for i in S1:
     if i in mp:
         mp[i] = mp.get(i, 0) + 1
-    for i in S2:
-        if i not in mp:
-            print("false")
-            break
-        
+    else:
+        mp[i] = 1
+
+for i in S2:
+    if i not in mp:
+        print("false")
+        break
+    mp[i] = mp.get(i, 0) - 1
+
 for i in mp:
     if mp[i] != 0:
         print("false")
