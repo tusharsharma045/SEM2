@@ -37,3 +37,19 @@ def conqure(left,right):
 arr = [1,-2,3,12,4,-3,21,34]
 result = Merge(arr)
 print(result)
+
+
+def selection(arr):
+    n = len(arr)
+    for i in range (n):
+        minInd = i
+        for j in range(i+1,len(arr)):
+            if arr[j]<arr[minInd]:
+                minInd = j
+        
+        arr[i], arr[minInd] = arr[minInd], arr[i]
+
+
+arr = [1,-2,3,12,4,-3,21,34]
+result = selection(arr)
+print(result)
