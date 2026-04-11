@@ -1,3 +1,4 @@
+# move Zeroes
 nums = [2,1,0,3,4,0,9]
 
 i=0
