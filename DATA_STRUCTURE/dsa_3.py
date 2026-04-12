@@ -9,6 +9,7 @@
 #  output = [3 7 2 1 5 6 0]
 
 # //find max and min in a list
+# min maxx game
 li = [1,3,2,4]
 max = li[0]
 min = li[0]
@@ -23,7 +24,7 @@ print("Max", max)
 print("Min", min)
 print("Sum:", min + max)
 
-
+# Product of Array Except Self
 l = [1, 0, 3, 4]
 total = 1
 for i in l:
