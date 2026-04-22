@@ -1,0 +1,36 @@
+/* Reset basic spacing */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar container */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1); /* semi-transparent background */
+  backdrop-filter: blur(10px); /* frosted glass effect */
+  padding: 15px;
+  gap: 40px; /* space between links */
+}
+
+/* Links styling */
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 12px;
+  transition: 0.3s;
+}
+
+/* Hover effect */
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+}
+
+/* Active link style (optional if you use NavLink) */
+nav a.active {
+  border-bottom: 2px solid #ff4d4d;
+}
